@@ -5,7 +5,9 @@ HER2 CAP Proficiency Survey / FISH Group Calculator
 README
 
 Overview
-This HTML document is a browser-based calculator for entering paired centromere and HER2 signal counts by nucleus and generating a structured HER2 FISH summary. It was designed to support quick review of counted nuclei, automated result calculations, visual assessment of HER2 signal distribution, and standardized reporting output.
+This HTML document is a browser-based calculator for entering paired centromere and HER2 signal counts by 
+nucleus and generating a structured HER2 FISH summary. It was designed to support quick review of counted nuclei, 
+automated result calculations, visual assessment of HER2 signal distribution, and standardized reporting output.
 
 Core Functions
 1. Sample Information
@@ -35,13 +37,24 @@ Core Functions
    - Group 4: Ratio < 2.0 and Avg HER2 >= 4 and < 6 -> Additional workup
    - Group 5: Ratio < 2.0 and Avg HER2 < 4 -> Negative
 
-5. Heterogeneity Scoring
-   Heterogeneity is based on the coefficient of variation (CV) of HER2 signal counts:
-   - Low heterogeneity: CV 0.25 to 0.40
-   - Moderate heterogeneity: CV > 0.40 to 0.60
-   - High heterogeneity: CV > 0.60
-   - Values below 0.25 are reported as below the low heterogeneity range
+5. Heterogeneity Scoring, now reported as copy number dispersion.
 
+Single gene: You can have heterogeneity—like different mutations or variations in different cells. 
+If a certain mutation arises in one cell and all its descendants carry it, that’s a clonal event. 
+If the gene is particularly prone to accumulating changes say, due to faulty repair, that’s genomic instability. 
+
+Laboratory-defined heterogeneity categories based on the coefficient of variation (CV) of HER2 signal counts.
+
+These categories are intended as descriptive measures of signal dispersion and are not part of 
+current ASCO/CAP HER2 testing guidelines.
+
+CV Biological Interpretation:
+
+<0.25 Uniform copy-number population
+0.25–0.40 Mild copy-number dispersion
+0.40–0.60 Moderate copy-number dispersion
+>0.60 Marked copy-number dispersion; consider sub-clonal populations
+ 
 6. Bimodality Detection
    The calculator evaluates the HER2 signal distribution for clear bimodality.
    It looks for:
